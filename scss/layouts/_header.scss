@@ -1,0 +1,49 @@
+
+.hero-image{
+  overflow: hidden;
+  background-image: url('../Grafiikat/frontpage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  @include bgCover(cover);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+.hero-image::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+.hero-container{
+  max-width: 960px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	@include transform(translate(-50%,-50%));
+  z-index: 99;
+}
+
+.arrow-down{
+  z-index: 99;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 15px;
+  margin-left: -48px;
+  height: 50px;
+  width: 100px;
+}
+.down-text{
+  color: #FFF;
+  font-size: 16px;
+}

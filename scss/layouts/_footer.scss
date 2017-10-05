@@ -1,0 +1,57 @@
+@import "base/typography";
+.footer{
+  font-family: $second-font-family;
+  background-color: $secondary-color;
+}
+.footer h3{
+  @extend h2;
+  font-family: $base-font-family;
+  color: $main-color;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.footer p {
+  line-height: 2;
+  color: $main-color;
+}
+.footer-nav{
+  margin: 0;
+  padding: 0;
+}
+.submenu{
+  margin: 10px!important;
+}
+.footer-nav li{
+  display: block;
+}
+.footer ul{
+  padding: 0;
+}
+
+.footer-nav li a{
+  text-decoration: none;
+  line-height: 2;
+  font-weight: $default-weight;
+  font-size: $base-font-size;
+  color: $main-color;
+}
+
+.sub-menu{
+  margin-left: 1em;
+}
+.sub-menu > li > a:before {
+   color: $main-color;
+   content: '>> ';
+}
+
+.fa{
+  text-decoration: none;
+  margin: 5px;
+  font-size: 18px;
+}
+.footer a{
+  color: $main-color!important;
+}
+.fa:hover, .fa:active, .fa:focus{
+  text-decoration: none;
+}

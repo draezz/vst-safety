@@ -1,0 +1,111 @@
+/* LOGO */
+.navbar-brand{
+  padding: 0px;
+}
+
+/* NAV TEXT */
+.navbar{
+  @include transition(0.4s);
+  transition: 0.4s;
+  margin: 0;
+  padding: 15px;
+  background-color: transparent;
+  border-bottom: transparent;
+}
+.navbar .navbar-nav>li{
+  padding: 15px;
+}
+.navbar .navbar-nav>li>a{
+  text-decoration: none;
+  color: $main-color;
+  font-size: 16px;
+  font-weight: $default-weight;
+  padding: 0;
+}
+.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:visited{
+  background-color: transparent;
+  opacity: 0.8;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+  color: $secondary-color;
+  background-color: transparent;
+}
+.dropdown-menu > .active > a::before{
+  content: ">>";
+  padding-right: 5px;
+}
+.dropdown-menu > li > a{
+  text-decoration: none;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    text-decoration: none;
+  background-color: transparent;
+}
+
+.active > a{
+  border-bottom: 2px solid $main-color;
+}
+.secondary-menu {
+  background-color: $main-color;
+  border-bottom: 1px solid #d1d1d1;
+}
+.secondary-menu .active > a {
+  border-bottom: 2px solid $secondary-color;
+}
+.secondary-menu .navbar-nav>li>a{
+  color: $secondary-color;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover
+.navbar-toggle .icon-bar{
+  border: 0!important;
+}
+
+.dropdown-menu>li>a{
+  color: $secondary-color!important;
+}
+
+// X Icon
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  background-color: $secondary-color;
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+// dropdown
+.navbar-right .dropdown-menu {
+    right: auto;
+}
+.dropdown-menu{
+  border: 0!important;
+  font-size: $base-font-size;
+}
+.secondary-menu .dropdown-menu {
+  margin-top: 11px!important;
+}

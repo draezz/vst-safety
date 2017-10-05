@@ -1,0 +1,68 @@
+$break-small: 468px;
+$break-average: 768px;
+$break-large: 1200px;
+$break-bootstrap: 992px;
+
+
+.page-image{
+  @media screen and (max-width: $break-average) {
+    padding: 150px 0 !important;
+  }
+}
+
+.col-md-4, .col-md-7, .col-xs-12{
+  @media screen and (max-width: $break-bootstrap) {
+    margin-bottom: 40px;
+  }
+}
+
+h1 {
+  @media screen and (max-width: $break-large) {
+    font-size: 2.5em;
+  }
+  @media screen and (max-width: $break-average) {
+    font-size: 2em;
+  }
+}
+
+h2{
+  @media screen and (max-width: $break-large) {
+    font-size: 2em;
+  }
+}
+
+.footer h3{
+  @media screen and (max-width: $break-small) {
+    font-size: 1.5em;
+  }
+
+}
+.hero-container{
+  @media screen and (max-width: $break-large) {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
+.feed{
+  @media screen and (max-width: $break-average) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.navbar{
+  @media screen and (max-width: $break-average) {
+    background-color: $main-color;
+  }
+}
+.navbar .navbar-nav>li>a{
+  @media screen and (max-width: $break-average) {
+    color: $secondary-color;
+  }
+}
+.secondary-menu .active > a{
+  @media screen and (max-width: $break-average) {
+    border-bottom: none;
+  }
+}

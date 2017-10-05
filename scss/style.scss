@@ -1,0 +1,133 @@
+@import "base/base";
+
+body{
+  animation: myfadeInAnimation 2s;
+}
+body,html{
+  overflow-x: hidden;
+  -webkit-font-smoothing:antialiased !important;
+}
+a {
+    @include transition(all 0.3s);
+    text-decoration: underline;
+    color: $secondary-color;
+}
+a:focus, a:hover, a:visited{
+  color: $secondary-color;
+}
+section{
+  padding: 120px 0;
+}
+.date{
+  color: #666;
+  font-size: 14px;
+  padding: 5px;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+ul, ol{
+  margin: 0;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #000 !important;
+opacity: 1;
+font-weight: 400;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #000 !important;
+opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #000 !important;
+opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #000 !important;
+opacity: 1;
+}
+
+.wpcf7 textarea{
+  resize: none;
+  height: 150px;
+}
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+  font-family: $second-font-family;
+    padding: 15px;
+    outline: 0;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+ @extend .btn;
+}
+#left {
+    width: 47%;
+    float: left;
+    margin-right:6%;
+}
+
+#right {
+    width: 47%;
+    float: left;
+}
+
+.clearfix:after {
+    content:"\0020";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+.clearfix {
+    display:block;
+}
+.blog-article{
+  margin-top: 30px;
+  font-family: $second-font-family;
+}
+.blog-article h3{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.blog-article span{
+  font-weight: $default-weight;
+}
+.blog-article a{
+  text-decoration: none;
+}
+.blog-article a:hover{
+  opacity: 0.8;
+}
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

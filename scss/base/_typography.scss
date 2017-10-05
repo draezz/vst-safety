@@ -1,0 +1,46 @@
+@import "helpers/variables";
+
+body {
+    color: $secondary-color;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: $default-weight;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-weight: $bold-weight;
+    font-size: $h1-font-size;
+    color: $main-color;
+    line-height: $base-line-height;
+}
+
+h2 {
+    font-weight: $bold-weight;
+    font-size: $h2-font-size;
+    color: $secondary-color;
+}
+
+h3,h4,h5,h6{
+  font-weight: $bold-weight;
+  color: $secondary-color;
+}
+
+p {
+  font-family: $second-font-family;
+  font-size: $base-font-size;
+  font-weight: $default-weight;
+  line-height: $base-line-height;
+  margin: 20px 0 20px;
+}
+
+hr{
+  text-align: left;
+  margin-left: 0;
+  max-width: 300px;
+  border: 2px solid $secondary-color;
+}
+
+.form p{
+  margin: 10px 0 10px;
+}

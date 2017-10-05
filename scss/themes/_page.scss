@@ -1,0 +1,50 @@
+.page-image{
+  background-color: #000;
+  padding: 250px 0;
+  position: relative;
+}
+.page-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+.page-container{
+  position: relative;
+  z-index: 99;
+  text-align: center;
+}
+.brand-content{
+  text-align: center;
+  margin: 0 auto;
+}
+.brand-content p{
+  max-width: 840px;
+  margin: 0 auto;
+}
+.brand-content h2{
+  margin: 40px;
+  margin-top: 0px;
+}
+.brands{
+  margin-top: 80px;
+}
+.brand {
+  opacity: 0.5;
+  margin-bottom: 40px;
+  padding: 80px;
+  border-right: 0;
+}
+.brand:last-child {
+  margin-bottom: 0px;
+}
+
+.brand:hover{
+  cursor: pointer;
+  transition: 0.3s all;
+  opacity: 1;
+}

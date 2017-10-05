@@ -1,0 +1,42 @@
+@import "helpers/mixins";
+.arrow-down{
+  cursor: pointer;
+}
+.btn{
+  font-family: $base-font-family!important;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: $base-font-size;
+  line-height: 1em;
+  background: $secondary-color;
+  color: #fff;
+  text-align: center;
+  border-color: transparent;
+  @include border-radius(30px);
+  border: 2px solid $secondary-color;
+  @include transition(all 0.3s);
+
+}
+.btn:hover, .btn:focus, .btn:active, .btn:active:focus{
+  @extend .btn;
+  outline: 0!important;
+  background-color: $main-color;
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.footer .btn{
+  @extend .btn;
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+.footer .btn:hover, .footer .btn:focus, .footer .btn:active, .footer .btn:active:focus{
+  @extend .btn;
+  outline: 0!important;
+  background-color: $secondary-color!important;
+  color: $main-color!important;
+  border-color: $main-color!important;
+}
