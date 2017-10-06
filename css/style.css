@@ -9,7 +9,7 @@ body {
 h1 {
   font-weight: 700;
   font-size: 3em;
-  color: #FFF;
+  color: #000;
   line-height: 1.6; }
 
 h2, .footer h3 {
@@ -90,9 +90,13 @@ hr {
   transition: 0.4s;
   transition: 0.4s;
   margin: 0;
-  padding: 15px;
-  background-color: transparent;
-  border-bottom: transparent; }
+  padding: 40px;
+  background-color: #000;
+  border-bottom: transparent;
+  border-radius: 0px; }
+
+.navbar-default {
+  border-color: transparent; }
 
 .navbar .navbar-nav > li {
   padding: 15px; }
@@ -103,6 +107,9 @@ hr {
   font-size: 16px;
   font-weight: 400;
   padding: 0; }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-top: -35px; }
 
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:visited {
   background-color: transparent;
@@ -195,7 +202,7 @@ body {
 h1 {
   font-weight: 700;
   font-size: 3em;
-  color: #FFF;
+  color: #000;
   line-height: 1.6; }
 
 h2, .footer h3 {
